@@ -13,6 +13,9 @@ print("1.January, "
       "11.November, "
       "12.December ")
 month = int(input())
+if month <0 or month>12:
+    print("You're such a comedian")
+    exit()
 if month == 10:
     print("Congratulations, you'll be credited with a discount of 15% over the total amount of your purchase")
     print("Please, type de amount of your purchase")
@@ -23,3 +26,4 @@ else:
     print("input the amount of your purchase")
     amount2 = input()
     print("Your total is: "+str(amount2))
+    print("your total is:")
