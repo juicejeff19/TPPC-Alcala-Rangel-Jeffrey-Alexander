@@ -9,7 +9,10 @@ def get_numbers():
     number1 = int(input())
     print("input the second number")
     number2 = int(input())
-    multiplication(number1, number2)
+    if number1<0 or number2<0:
+        print("Xd")
+    else:
+        multiplication(number1, number2)
     return number1, number2
 
 
